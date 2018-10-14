@@ -172,3 +172,16 @@ const buttonCode = {
   251: "unlock trackpad (Chrome/Edge)",
   255: 'toggle touchpad',
 };
+
+
+//KeyCode of pressed button
+document.addEventListener("keydown", function(event) {
+  console.log(event.which);
+
+//Write KeyCode
+  for(var index in buttonCode){
+    console.log(buttonCode[index] + "<br />")
+  }
+});
+
+//Compare
