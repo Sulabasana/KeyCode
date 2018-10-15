@@ -1,0 +1,5 @@
+1. Compare completed
+2. Make functions independed (create return of variable)
+3. Write on Div
+4. Make style of div
+5. In Div should be: key code, key name.

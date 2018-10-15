@@ -176,12 +176,21 @@ const buttonCode = {
 
 //KeyCode of pressed button
 document.addEventListener("keydown", function(event) {
-  console.log(event.which);
-
-//Write KeyCode
-  for(var index in buttonCode){
-    console.log(buttonCode[index] + "<br />")
+  //console.log(event.which);
+  var eve = event.which;
+  //return eve
+  //iterate through list of keycodes
+  for(var i in buttonCode){
+  //console.log(i)
+  //console.log(buttonCode[i])
+    //if exists
+    if(eve == i){
+      console.log(buttonCode[i])
+      console.log(i)
+    }
   }
+ 
 });
+
 
 //Compare
