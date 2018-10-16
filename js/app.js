@@ -173,24 +173,22 @@ const buttonCode = {
   255: 'toggle touchpad',
 };
 
-
+var write = document.getElementById("write")
+var code = document.getElementById("code")
 //KeyCode of pressed button
 document.addEventListener("keydown", function(event) {
   //console.log(event.which);
   var eve = event.which;
-  //return eve
-  //iterate through list of keycodes
-  for(var i in buttonCode){
-  //console.log(i)
-  //console.log(buttonCode[i])
-    //if exists
-    if(eve == i){
-      console.log(buttonCode[i])
-      console.log(i)
-    }
+  //On keypress write down keycode and letter
+  if(eve){
+  	// console.log(eve)
+  	// console.log(buttonCode[eve]);
+  	write.innerHTML = buttonCode[eve]
+  	code.innerHTML = eve
+  	//Don't let function button to do their task
+  	event.preventDefault();
   }
  
 });
 
 
-//Compare

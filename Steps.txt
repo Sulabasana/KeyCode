@@ -3,3 +3,4 @@
 3. Write on Div
 4. Make style of div
 5. In Div should be: key code, key name.
+6. Create effect using canvas. Write code in the middle of the page together with letter
