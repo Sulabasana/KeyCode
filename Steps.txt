@@ -1,6 +1,7 @@
-1. Compare completed
-2. Make functions independed (create return of variable)
-3. Write on Div
-4. Make style of div
-5. In Div should be: key code, key name.
-6. Create effect using canvas. Write code in the middle of the page together with letter
+1. Compare completed +
+2. Make functions independed (create return of variable) +
+3. Write on Div +
+4. Make style of div +
+5. In Div should be: key code, key name. +
+6. If windows key was presed then prevent default. d.className += " otherclass"; albo element.classList.add("otherclass");
+//6. Create effect using canvas. Write code in the middle of the page together with letter
