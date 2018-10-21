@@ -140,9 +140,9 @@ const buttonCode = {
   178: 'stop',
   179: 'play/pause',
   180: 'e-mail',
-  181: 'mute/unmute (firefox)',
-  182: 'decrease volume level (firefox)',
-  183: 'increase volume level (firefox)',
+  181: 'mute/unmute',
+  182: 'decrease volume level',
+  183: 'increase volume level',
   186: 'semi-colon / ñ',
   187: 'equal sign',
   188: 'comma',
@@ -173,7 +173,7 @@ const buttonCode = {
   255: 'toggle touchpad',
 };
 
-var write = document.getElementById("write")
+var write = document.querySelector(".write")
 var code = document.getElementById("code")
 //KeyCode of pressed button
 document.addEventListener("keydown", function(event) {
@@ -187,6 +187,9 @@ document.addEventListener("keydown", function(event) {
   	code.innerHTML = eve
   	//Don't let function button to do their task
   	event.preventDefault();
+  }
+  if(eve == 91){
+  	write.classList.add('smaller')
   }
  
 });
